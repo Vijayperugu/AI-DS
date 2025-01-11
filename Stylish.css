@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.clg-name {
+    font-family: serif;
+    height: 5vh;
+    width: 100%;
+    background-color: #CA6959;
+    text-align: center;
+    line-height: 5vh;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.containerOne {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.img-box {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-box img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* nav-bar styling */
+nav {
+    height: 100px;
+    width: 90%;
+    background-color: #F0806C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    border-radius: 30px;
+
+
+}
+
+nav img {
+    height: 90px;
+    width: 100px;
+    object-fit: contain;
+    color: white;
+    margin-left: 45px;
+
+}
+
+.p {
+    border-left: 3px solid #FFFFFF;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.menu .menu-section {
+    width: 800px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.menu button{
+    width: auto;
+    height: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F0806C;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* .menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+} */
+
+.menu ul li button i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.menu ul li a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.menu ul li:hover i {
+    transform: rotate(180deg);
+
+}
+/* campus-section starts */
+
+.campus-section {
+    
+    position: relative;
+    
+}
+
+.campus-dropdown {
+    width: 130px;
+    height: 200px;
+    background-color:#CA6959;
+    position: absolute;
+    top: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    display: none;
+    z-index: 1000;
+    
+}
+
+.campus-dropdown   li {
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    
+
+}
+
+.campus-section:hover .campus-dropdown{
+    display: grid;
+}
+/* campus-section Ends */
+/* .placement-section starts */
+.placement-section{
+    position: relative;
+    
+}
+
+.placement-dropdown  {
+    width: 500px;
+    height: 200px;
+    background-color:#CA6959;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    display: none;
+}
+.placement-dropdown li{
+    padding: 5px;
+    margin-top: 10px;
+    list-style: none;
+
+}
+.placement-dropdown li a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.placement-section:hover .placement-dropdown{
+    display:flex;
+}
+/* placement-dropdown Ends */
+/* facilities dropdown starts */
+.facilities-section{
+    position: relative;
+}
+
+.facilities-dropdown {
+    width: 700px;
+    height: 200px;
+    background-color:#CA6959;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    display: none;
+}
+.facilities-dropdown li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.facilities-dropdown li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.facilities-section:hover .facilities-dropdown{
+    display: flex;
+}
+/* facilities Ends */
+.examcell-section{
+    position: relative;
+}
+
+.examcell-dropdown {
+    width: 250px;
+    height: 400px;
+    background-color:#CA6959;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ifr;
+    padding: 10px;
+    display: none;
+    
+}
+.examcell-dropdown li{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+.examcell-section:hover .examcell-dropdown{
+    display: grid;
+}
+
+/* About collage Starts */
+.about-collage {
+    height: 100vh;
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+.part1 {
+    width: 500px;
+    height: 70%;
+    background-color: #F0806C;
+}
+
+.part2 {
+    width: 500px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.academics h1 {
+    margin-bottom: 50px;
+
+}
+
+.academics p {
+    font-weight: 100;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+
+.academics button {
+    font-family: sans-serif;
+    width: 150px;
+    height: 40px;
+    background-color: #F0806C;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.academics button:hover {
+    transform: translateY(-5px);
+    border: 2px solid black;
+}
